@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alt
 
-## Getting Started
+![AI Logo](/public/AI.png)
 
-First, run the development server:
+A minimalist blog exploring the frontiers of AI, quantum computing, and the digital realm.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Alt is a personal blog dedicated to unraveling the complexities of cutting-edge technologies. Here, you'll find in-depth articles, thought-provoking analyses, and forward-thinking perspectives on artificial intelligence, quantum computing, and the ever-evolving digital landscape.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As the author, I'm a software engineer and AI enthusiast passionate about pushing the boundaries of what's possible in tech. With a background in computer science and a keen interest in emerging technologies, I aim to bridge the gap between complex technical concepts and accessible understanding.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- Clean, responsive design
+- Dark mode for comfortable reading
+- In-depth articles on cutting-edge tech topics
+- Copy protection for content
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
+alt/
+├── app/
+│   ├── fonts/
+│   │   ├── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── posts/
+│   │   ├── ai/
+│   │   │   └── page.tsx
+│   │   ├── models/
+│   │   │   └── page.tsx
+│   │   ├── pytorch/
+│   │   │   └── page.tsx
+│   │   ├── quantum/
+│   │   │   └── page.tsx
+│   │   ├── rag/
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   └── AI.png
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by dxd [x.com/dxd]
