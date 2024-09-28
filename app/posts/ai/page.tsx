@@ -1,80 +1,66 @@
 "use client";
 
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import { ChevronUp, Clock, Share2, Check } from "lucide-react";
+import Link from 'next/link'
+import { useState, useEffect } from 'react'
+import { ChevronUp, Clock, Share2, Check } from 'lucide-react'
 
-export default function CreatingAIWithPyTorch() {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  const [copied, setCopied] = useState(false);
+export default function RevolutionizingAICompilers() {
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [showScrollTop, setShowScrollTop] = useState(false)
+  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      const totalHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      const progress = (window.scrollY / totalHeight) * 100;
-      setScrollProgress(progress);
-      setShowScrollTop(window.scrollY > 300);
-    };
+      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      const progress = (window.scrollY / totalHeight) * 100
+      setScrollProgress(progress)
+      setShowScrollTop(window.scrollY > 300)
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const handleShare = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      await navigator.clipboard.writeText(window.location.href)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000) // Reset after 2 seconds
     } catch (err) {
-      console.error("Failed to copy: ", err);
+      console.error('Failed to copy: ', err)
     }
-  };
+  }
 
   return (
     <article className="relative space-y-6 text-xs">
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200">
-        <div
-          className="h-full bg-gradient-to-r from-blue-500 to-purple-500"
+        <div 
+          className="h-full bg-gradient-to-r from-blue-500 to-purple-500" 
           style={{ width: `${scrollProgress}%` }}
         ></div>
       </div>
 
-      <Link
-        href="/"
-        className="text-blue-400 hover:underline inline-block mb-4"
-      >
-        {"<"} Back to home
+      <Link href="/" className="text-blue-400 hover:underline inline-block mb-4">
+        {'<'} Back to home
       </Link>
-
+      
       <header className="space-y-2">
         <h1 className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-          Creating an AI with PyTorch: A Comprehensive Beginner's Guide
+          Revolutionizing AI Compilers: The Path to Efficient Hardware Utilization
         </h1>
-        <p className="text-gray-400">
-          Embark on an in-depth journey into artificial intelligence, mastering
-          PyTorch to build and train your own neural network
-        </p>
+        <p className="text-gray-400">Exploring the future of AI compilation techniques for optimized performance across diverse hardware platforms</p>
         <div className="flex items-center space-x-4 text-gray-500">
-          <span className="flex items-center">
-            <Clock size={12} className="mr-1" /> 15 min read
-          </span>
-          <button
+          <span className="flex items-center"><Clock size={12} className="mr-1" /> 12 min read</span>
+          <button 
             onClick={handleShare}
             className="flex items-center hover:text-gray-300 transition-colors"
           >
-            {copied ? (
-              <Check size={12} className="mr-1" />
-            ) : (
-              <Share2 size={12} className="mr-1" />
-            )}
-            {copied ? "Copied!" : "Share"}
+            {copied ? <Check size={12} className="mr-1" /> : <Share2 size={12} className="mr-1" />}
+            {copied ? 'Copied!' : 'Share'}
           </button>
         </div>
       </header>
