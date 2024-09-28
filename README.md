@@ -49,4 +49,4 @@ alt/
 ├── public/
 │   └── AI.png
 
-Built with ❤️ by dxd [x.com/dxd]
+**Built with ❤️ by [dxd](https://x.com/dxd)**
