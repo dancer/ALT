@@ -13,7 +13,7 @@ interface ProjectCardProps {
 export function ProjectCard({ title, category, description, image, locked, slug }: ProjectCardProps) {
   const isVideo = image.endsWith('.mp4')
   const MediaContent = () => (
-    <>
+    <div className="relative w-full h-full">
       {isVideo ? (
         <video
           src={image}
@@ -30,7 +30,8 @@ export function ProjectCard({ title, category, description, image, locked, slug 
           className="object-cover w-full h-full"
         />
       )}
-    </>
+      <div className="absolute inset-0 bg-black opacity-30"></div>
+    </div>
   )
 
   return (
