@@ -29,7 +29,7 @@ export function TopSection() {
             <p className="text-xs text-neutral-600">Intern at Joinwarp</p>
           </li>
           <li>
-            <h3 className="text-sm font-semibold">Benza</h3>
+            <h3 className="text-sm font-semibold">Benjamin</h3>
             <p className="text-xs text-neutral-600">CTO</p>
             <p className="text-xs text-neutral-600">2024 - Present</p>
           </li>
