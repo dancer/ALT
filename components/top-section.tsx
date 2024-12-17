@@ -9,6 +9,15 @@ export function TopSection() {
           digital tooling, and multimodal interaction. Our team's expertise spans cutting-edge 
           technologies and best practices in software development.
         </p>
+        <div className="mt-4">
+          <span className="text-sm text-neutral-600 mr-2">Email:</span>
+          <a 
+            href="mailto:contact@afterima.ge" 
+            className="text-sm hover:text-[#C1E1C1] transition-colors duration-200 ease-in-out"
+          >
+            contact@afterima.ge
+          </a>
+        </div>
       </div>
       <div>
         <h2 className="text-xs uppercase mb-4 text-neutral-600">Team</h2>
