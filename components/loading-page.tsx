@@ -22,7 +22,7 @@ export function LoadingPage() {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#f5f5f0] transition-opacity duration-500">
       <div className="space-y-8 text-center">
-        <h1 className="text-2xl tracking-[0.3em] text-neutral-800">AFTER IMAGE</h1>
+        <h1 className="text-2xl tracking-[0.3em] text-neutral-800">Anywho</h1>
         <div className="text-sm tracking-wider text-neutral-600">{progress}%</div>
       </div>
     </div>

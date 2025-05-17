@@ -1,19 +1,19 @@
-⋆｡°✩ After Image ✩°｡⋆
+⋆｡°✩ Anywho ✩°｡⋆
 ════════════════════
 
 A minimal software development studio crafting digital experiences with care ♡
 
 ▲ Projects
 ────────
-⋆ Spiritu.al  ❀ AI prompt engineering
-⋆ Nidal.ee    ❀ Gaming account manager
-⋆ Tre.ad      ❀ Developer velocity tools
-⋆ Lovehe.art  ❀ Empathetic fintech
-⋆ Line.al     ❀ Terminal UI components
-⋆ Pictori.al  ❀ Visual harmony tools
-⋆ Hecar.im    ❀ VS Code aesthetics
-⋆ GNAR.AI     ❀ Coming soon ⋆°•
-⋆ Reng.ar     ❀ Coming soon ⋆°•
+⋆ Spiritu.al ❀ AI prompt engineering
+⋆ Nidal.ee ❀ Gaming account manager
+⋆ Tre.ad ❀ Developer velocity tools
+⋆ Lovehe.art ❀ Empathetic fintech
+⋆ Line.al ❀ Terminal UI components
+⋆ Pictori.al ❀ Visual harmony tools
+⋆ Hecar.im ❀ VS Code aesthetics
+⋆ GNAR.AI ❀ Coming soon ⋆°•
+⋆ Reng.ar ❀ Coming soon ⋆°•
 
 ✧ Tech Stack
 ────────────

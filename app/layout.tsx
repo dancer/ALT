@@ -3,14 +3,14 @@ import './globals.css'
 import { InitialLoading } from '@/components/initial-loading'
 import { Footer } from '@/components/footer'
 
-const spaceMono = Space_Mono({ 
-  subsets: ['latin'], 
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-mono'
 })
 
 export const metadata = {
-  title: 'After Image',
+  title: 'Anywho',
   description: 'Software Development Studio in London, UK',
 }
 

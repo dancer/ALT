@@ -24,7 +24,7 @@ export function AnimatedLogo() {
         fill="none"
       />
       <text x="50" y="70" textAnchor="middle" fill="white" fontSize="12">
-        After Image
+        Anywho
       </text>
     </svg>
   )
