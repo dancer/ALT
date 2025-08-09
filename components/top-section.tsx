@@ -22,24 +22,10 @@ export function TopSection() {
       <div>
         <h2 className="text-xs uppercase mb-4 text-neutral-600">Team</h2>
         <ul className="space-y-4">
-          <li>
-            <h3 className="text-sm font-semibold">Ashu</h3>
-            <p className="text-xs text-neutral-600">CEO</p>
-            <p className="text-xs text-neutral-600">2024 - Present</p>
-            <p className="text-xs text-neutral-600">Student | Project Manager</p>
-          </li>
-          <li>
             <h3 className="text-sm font-semibold">Josh</h3>
             <p className="text-xs text-neutral-600">AIO</p>
             <p className="text-xs text-neutral-600">2024 - Present</p>
             <p className="text-xs text-neutral-600">Undergrad | Intern at Vercel</p>
-          </li>
-          <li>
-            <h3 className="text-sm font-semibold">Benjamin</h3>
-            <p className="text-xs text-neutral-600">CTO</p>
-            <p className="text-xs text-neutral-600">2024 - Present</p>
-            <p className="text-xs text-neutral-600">Undergrad | 3D Artist</p>
-          </li>
         </ul>
       </div>
       <div>
