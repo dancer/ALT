@@ -25,7 +25,7 @@ export function TopSection() {
             <h3 className="text-sm font-semibold">Josh</h3>
             <p className="text-xs text-neutral-600">AIO</p>
             <p className="text-xs text-neutral-600">2024 - Present</p>
-            <p className="text-xs text-neutral-600">Full time at Vercel</p>
+            <p className="text-xs text-neutral-600">Undergrad | SWE Vercel</p>
         </ul>
       </div>
       <div>
