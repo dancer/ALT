@@ -1,17 +1,21 @@
-import { Space_Mono } from 'next/font/google'
+import type { Metadata, Viewport } from 'next'
+import { Instrument_Serif } from 'next/font/google'
 import './globals.css'
-import { InitialLoading } from '@/components/initial-loading'
-import { Footer } from '@/components/footer'
 
-const spaceMono = Space_Mono({
+const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-mono'
+  weight: '400',
+  display: 'swap',
+  variable: '--font-serif',
 })
 
-export const metadata = {
-  title: 'Anywho',
-  description: 'Software Development Studio in London, UK',
+export const metadata: Metadata = {
+  title: 'after a long time',
+}
+
+export const viewport: Viewport = {
+  themeColor: '#000000',
+  colorScheme: 'dark',
 }
 
 export default function RootLayout({
@@ -21,15 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${spaceMono.variable} font-mono bg-[#f5f5f0] text-neutral-800 flex flex-col min-h-screen`}>
-        <InitialLoading>
-          <div className="flex-grow">
-            {children}
-          </div>
-          <Footer />
-        </InitialLoading>
-      </body>
+      <body className={instrumentSerif.variable}>{children}</body>
     </html>
   )
 }
-

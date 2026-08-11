@@ -1,30 +1,26 @@
-⋆｡°✩ Anywho ✩°｡⋆
-════════════════════
+# afterimage
 
-A minimal software development studio crafting digital experiences with care ♡
+A single dark page. One line, and the light it leaves behind.
 
-▲ Projects
-────────
-⋆ Spiritu.al ❀ AI prompt engineering
-⋆ Nidal.ee ❀ Gaming account manager
-⋆ Tre.ad ❀ Developer velocity tools
-⋆ Lovehe.art ❀ Empathetic fintech
-⋆ Line.al ❀ Terminal UI components
-⋆ Pictori.al ❀ Visual harmony tools
-⋆ Hecar.im ❀ VS Code aesthetics
-⋆ GNAR.AI ❀ Coming soon ⋆°•
-⋆ Reng.ar ❀ Coming soon ⋆°•
+## Run it
 
-✧ Tech Stack
-────────────
-⋆ Next.js 14
-⋆ TypeScript
-⋆ Tailwind CSS
-⋆ Vercel
+```bash
+pnpm install
+pnpm dev
+```
 
-♡ Contact
-────────
-⋆ London, UK
-⋆ effect@afterima.ge
+Then open http://localhost:3000.
 
-⋆｡°✩ Made with love ✩°｡⋆
+## Layers
+
+`gradient-background.tsx` — a `GrainGradient` shader from
+`@paper-design/shaders-react`, drifting orange over black under a 20% black
+overlay.
+
+`app/page.tsx` — the line, centred, fading up out of a blur once on load.
+
+Nothing else, and nothing to click.
+
+## Stack
+
+Next.js 14 (App Router), TypeScript, Instrument Serif, Tailwind (preflight only).

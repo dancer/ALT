@@ -2,63 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-mono: 'Courier New', Courier, monospace;
-  --font-sans: var(--font-mono);
-  --highlight-color: #C1E1C1;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 body {
-  text-rendering: optimizeLegibility;
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
-  font-family: var(--font-mono);
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background-color: var(--highlight-color);
+  background: rgba(255, 255, 255, 0.12);
 }
 
-@keyframes fadeIn {
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.backdrop-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.stage {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.mark {
+  margin: 0;
+  font-size: clamp(1.0625rem, 2.2vw, 1.5rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  white-space: nowrap;
+  animation: surface 2.6s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+@keyframes surface {
   from {
     opacity: 0;
+    filter: blur(10px);
   }
   to {
     opacity: 1;
+    filter: blur(0);
   }
 }
-
-.fade-in {
-  animation: fadeIn 1s ease-out;
-  animation-fill-mode: both;
-  animation-delay: 2.5s;
-}
-
-/* Project page specific styles */
-.project-content h2 {
-  @apply text-xl font-semibold mb-4;
-}
-
-.project-content p {
-  @apply mb-6 text-neutral-800;
-}
-
-.project-content a {
-  @apply transition-colors;
-}
-
-/* ASCII-like font for the entire site */
-body, button, input, select, textarea {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* Global link hover style */
-a:hover {
-  color: var(--highlight-color);
-  text-decoration: none;
-}
-
-/* Main page specific link style */
-.main-page a:hover {
-  text-decoration: none;
-}
-
